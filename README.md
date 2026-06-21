@@ -71,22 +71,7 @@ These properties define bagasse as a high-moisture, low-conductivity porous ther
 
 ### Governing Model
 
-The transient thermal behavior of bagasse is described using a lumped energy balance:
-
-m_{b} C_{p,b} \frac{dT_{b}}{dt} = \dot{m}_{s} (h_{in} - h_{out})
-
-Where:
-
- = mass of bagasse
-
- = specific heat capacity
-
- = bagasse temperature
-
- = steam mass flow rate
-
- = inlet and outlet steam enthalpy
-
+The transient thermal behavior of bagasse is described using a lumped energy balance, refer technical paper for the governing equation.
 
 This formulation treats the system as a flow-driven thermal reactor, where heating is controlled by steam energy input.
 
@@ -104,11 +89,11 @@ Latent heat release during condensation
 Enthalpy-driven energy exchange
 
 
-Two limiting cases were considered:
+#### Two limiting cases were considered:
 
-Condensation with moisture deposition
+- Condensation with moisture deposition
 
-Condensation without deposition
+- Condensation without deposition
 
 
 These define operational bounds for realistic industrial behavior.
@@ -118,22 +103,20 @@ These define operational bounds for realistic industrial behavior.
 
 ### Biot Number Analysis
 
-To validate the lumped capacitance assumption:
-
-Bi = \frac{h L_c}{k}
+To validate the lumped capacitance assumption.
 
 ### Result:
 
-Bi ≤ 1 (conservative approach: Bi ≤ 0.1)
+Bi ≤ 1 (conservative approach: Bi ≤ 0.01)
 
 
 ### Interpretation:
 
-Internal conduction resistance is negligible
+a. Internal conduction resistance is negligible
 
-Temperature gradients inside bagasse are minimal
+b. Temperature gradients inside bagasse are minimal
 
-Lumped system modeling is valid
+c. Lumped system modeling is valid
 
 
 
@@ -229,11 +212,11 @@ Computational modeling
 
 ### Tools & Technologies
 
-Python (NumPy, SciPy, Matplotlib)
+Python (IronPython)
 
 DWSIM Process Simulator
 
-Thermodynamic property analysis
+Thermodynamic property analysis(Steam Tables Property Package)
 
 Heat transfer modeling
 
