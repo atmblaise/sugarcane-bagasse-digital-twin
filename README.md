@@ -43,54 +43,13 @@ Additional experimental validation and industrial-scale testing would be require
 ## Repository Structure
 
 Bagasse_Steam_Pasteurization/
-
-Bagasse_Steam_Pasteurization/
 │
 ├── README.md
-│
 ├── data/
-│   ├── experimental/
-│   │   ├── thermal_conductivity/
-│   │   ├── specific_heat_capacity/
-│   │   ├── moisture_content/
-│   │   └── bulk_density/
-│   │
-│   └── processed/
-│       └── design_basis_properties.xlsx
-│
 ├── mathematical_model/
-│   ├── governing_equations.pdf
-│   ├── model_assumptions.pdf
-│   ├── biot_number_analysis.pdf
-│   └── derivations/
-│
 ├── dwsim/
-│   ├── deposition_model/
-│   │   ├── deposition_model.dwxmz
-│   │   └── deposition_script.py
-│   │
-│   └── no_deposition_model/
-│       ├── no_deposition_model.dwxmz
-│       └── no_deposition_script.py
-│
 ├── results/
-│   ├── flowrate_sensitivity/
-│   │   ├── flowrate_sensitivity_summary.xlsx
-│   │   └── pasteurization_time_table.xlsx
-│   │
-│   ├── reference_outputs/
-│   │   ├── run_0_5kgph.xlsx
-│   │   ├── run_10kgph.xlsx
-│   │   ├── run_20kgph.xlsx
-│   │   └── run_100kgph.xlsx
-│   │
-│   └── figures/
-│       ├── flowrate_vs_pasteurization_time.png
-│       ├── model_comparison.png
-│   
-│
 └── documentation/
-    ├── Technical_Report.pdf
 
 ---
 
