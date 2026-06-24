@@ -296,15 +296,9 @@ dwsim/
 
 Simulation outputs:
 
-reference_simulation_outputs/
+reference simulation outputs/
 
 ---
-
-## Output Files
-
-Representative simulation outputs may include:
-
-results/raw_simulation_outputs/
 
 Example workbook contents:
 
