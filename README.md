@@ -26,12 +26,9 @@ The repository should be viewed as a process-design and engineering-analysis art
 The repository includes:
 
 * Experimental characterization data.
-* Process design basis documentation.
-* Mathematical model development notes.
-* DWSIM simulation files.
-* Custom IronPython unit-operation scripts.
-* Flowrate sensitivity study results.
+* DWSIM simulation files & custom IronPython unit-operation scripts.
 * Reference simulation outputs.
+* Flowrate sensitivity study results.
 * Supporting engineering documentation.
 
 The repository represents the final project state submitted for academic review.
@@ -43,13 +40,12 @@ Additional experimental validation and industrial-scale testing would be require
 ## Repository Structure
 
 Bagasse_Steam_Pasteurization/
-│
-├── README.md
-├── data/
-├── mathematical_model/
-├── dwsim/
-├── results/
-└── documentation/
+|-- README.MD
+|-- data/
+|-- dwsim/
+|-- reference_simulation_outputs/
+|-- results/
+`-- engineering_documentation/
 
 ---
 
@@ -85,7 +81,9 @@ Wet bagasse moisture content was approximately 70–75%.
 
 Dry bagasse moisture content was approximately 10%.
 
-Following statistical evaluation of results, wet uncompacted bagasse was selected as the process design basis.
+Statistical analysis was performed to compare the measured properties across the different moisture-content and compaction conditions and to evaluate the influence of these factors on bagasse thermal behavior.
+
+For process design and simulation, wet uncompacted bagasse was selected as the design basis because it most closely represents the condition in which bagasse is commonly utilized as a mushroom cultivation substrate.
 
 ### Phase 3 – Heat Transfer Analysis
 
@@ -122,7 +120,7 @@ Sensitivity analysis was conducted across a range of steam flowrates to evaluate
 
 Experimental data are stored under:
 
-data/experimental/
+data/
 
 The experimental program generated:
 
@@ -133,10 +131,6 @@ The experimental program generated:
 | Moisture Content       | Material characterization    |
 | Bulk Density           | Process design calculations  |
 
-Processed design-basis properties are stored under:
-
-data/processed/
-
 Only wet uncompacted bagasse properties were used in the final process model.
 
 ---
@@ -145,7 +139,7 @@ Only wet uncompacted bagasse properties were used in the final process model.
 
 Supporting calculations and documentation are stored under:
 
-mathematical_model/
+engineering_documentation/
 
 The Biot number analysis was used to evaluate the relative significance of internal conduction resistance and external convection resistance during steam heating.
 
@@ -255,6 +249,7 @@ For each simulation run:
 * Simulation was executed until the bagasse reached 75°C.
 * Pasteurization time was recorded.
 * Results were exported to spreadsheets for analysis.
+* Some steam-flowrate simulation runs required extrapolation to obtain the actual pasteurization processing time.
 
 ---
 
@@ -293,23 +288,15 @@ The no-deposition model exhibited non-monotonic behavior at higher steam flowrat
 
 Experimental data:
 
-data/experimental/
-
-Processed design-basis data:
-
-data/processed/
+data/
 
 Simulation files:
 
 dwsim/
 
-Model documentation:
-
-mathematical_model/
-
 Simulation outputs:
 
-results/
+reference_simulation_outputs/
 
 ---
 
@@ -331,11 +318,7 @@ Example workbook contents:
 
 Summary analysis files are stored under:
 
-results/summary_tables/
-
-Generated figures are stored under:
-
-results/figures/
+results/
 
 ---
 
@@ -398,9 +381,9 @@ Potential future work includes:
 
 ## License
 
-No license file is currently included.
+This repository is distributed under the MIT License.
 
-Usage rights should be confirmed with the project authors before reuse.
+Users are free to use, modify, distribute, and build upon the work in accordance with the terms of the license. See the LICENSE file for complete details.
 
 ---
 
