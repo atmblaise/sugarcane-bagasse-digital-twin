@@ -39,9 +39,7 @@ Additional experimental validation and industrial-scale testing would be require
 
 ## Repository Structure
 
-<!-- TREE_START -->
-
-'''text
+```text
 bagasse_pasteurization/
 │   .gitignore
 │   LICENSE
@@ -91,9 +89,7 @@ bagasse_pasteurization/
         results.xlsx
         
 
-'''
-
-<!-- TREE_END -->
+```
 
 ---
 
