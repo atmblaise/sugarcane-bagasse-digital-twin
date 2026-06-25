@@ -39,13 +39,61 @@ Additional experimental validation and industrial-scale testing would be require
 
 ## Repository Structure
 
-Bagasse_Steam_Pasteurization/
-|-- README.MD
-|-- data/
-|-- dwsim/
-|-- reference_simulation_outputs/
-|-- results/
-`-- engineering_documentation/
+<!-- TREE_START -->
+
+'''text
+bagasse_pasteurization/
+│   .gitignore
+│   LICENSE
+│   README.md
+│   tree.txt
+│   
+├───data
+│   ├───processed_experimental_data
+│   │       processed_experimental_results.xlsx
+│   │       
+│   ├───raw_data_processing
+│   │   ├───moisture_content
+│   │   ├───specific_heat_capacity
+│   │   └───thermal_conductivity
+│   │           thermal_conductivity_experimental_calculations.xlsx
+│   │           
+│   └───raw_experimental_data
+│       ├───moisture_content
+│       │       moisture_content_raw_data.xlsx
+│       │       
+│       ├───specific_heat_capacity
+│       │       spefic_heat_raw_data.xlsx
+│       │       
+│       └───thermal_conductivity
+│               thermal_conductivity_raw_data.xlsx
+│               
+├───dwsim
+│   ├───IronPython_scripts
+│   │       deposition.py
+│   │       no_deposition.py
+│   │       
+│   └───simulation_flowsheets
+│           Pasteurizer no deposition.dwxmz
+│           pasteurizer with deposition.dwxmz
+│           
+├───engineering_documentation
+│       Final Year Report-1.pdf
+│       
+├───reference_simulation_outputs
+│   ├───deposition_model
+│   │       deposition.xlsx
+│   │       
+│   └───no_deposition_model
+│           no_deposition.xlsx
+│           
+└───results
+        results.xlsx
+        
+
+'''
+
+<!-- TREE_END -->
 
 ---
 
